@@ -1,0 +1,108 @@
+@import url(//db.onlinewebfonts.com/c/58448bc8344e86403c7ad25b3509965f?family=Microsoft+New+Tai+Lue);
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: #5955B3;
+    font-family: Microsoft New Tai Lue;
+}
+.loginbox{
+    position:relative;
+    width:100%;
+    padding:30px 0 0 40px;
+    height:600px;
+    top:25px;
+    box-sizing: border-box;
+    box-shadow: -2px 5px 20px 1px #4F4C9B;
+}
+.loginbox .bmwt{
+    width: 90px;
+    height:70px;
+}
+.loginbox .loginimg{
+    height:400px;
+    width: 450px;
+}
+.loginbox .white{
+    color:white;
+}
+.loginbox li p{
+    font-size:25px;
+    margin-top:20px;
+}
+.loginbox .loginpath{
+   position: fixed;
+   left:120px;
+   top:-190px;
+   transform: rotate(-1deg);
+   height: 1050px;
+   width: 75%;
+}
+.loginbox .title{
+    text-transform: uppercase;
+    font-size: 17px;
+    margin-left: 55px;
+}
+.loginbox ul{
+    display:inline-flex;
+}
+.loginbox form{
+    color:white;
+    position: absolute;
+    bottom: 80px;
+    right: 20px;
+    width: 400px;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.loginbox form #showPass{
+     position: absolute;
+     right: 90px;
+     bottom:120px;
+     cursor: pointer;
+}
+.loginbox form img{ 
+    position:absolute;
+    margin-top: 25px;
+    width:25px;
+    z-index: 1000;
+    height: 25px; 
+    left:60px;  
+}
+.error-msg{
+    position: absolute;
+    font-size:18px;
+    right:10px; bottom:40px;
+    color:rgb(245, 111, 111);
+}
+.loginbox input[type="text"],input[type="password"]{
+    border: none;
+    outline: none;
+    border-bottom: solid white 2px;
+    background: none;
+    width: 220px;
+    margin: 25px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+.loginbox input[type="submit"]{
+    background: #05253B;
+    color:white;
+    width:150px;
+    height:50px;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+.loginbox label{
+    font-size:20px;
+    text-transform: uppercase;
+}
+.loginbox input[type="submit"]:hover{
+    background-color:highlight;
+}

@@ -1,0 +1,548 @@
+@import url(//db.onlinewebfonts.com/c/58448bc8344e86403c7ad25b3509965f?family=Microsoft+New+Tai+Lue);
+
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style: none; 
+}
+body{
+    background: #F1EBF8;
+    font-family: Microsoft New Tai Lue;
+}
+.container{
+    position: absolute;
+}
+/*SIDE NAVIGATION BAR*/
+.sidenav{
+    background: #5955B3;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 230px;
+    text-align: center;
+}
+.sidenav .logo{
+    width:130px;
+    height: 110px;
+}
+.sidenav .title{
+    font-size: 28px;
+}
+.sidenav .title2{
+    font-size: 13px;
+}
+.sidenav p{
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+}
+.active {
+    background: #C6C4FE;
+    width: 100%;
+}
+.sidenav .sidenav_list img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.sidenav .sidenav_list{
+    margin-top: 30px;
+}
+.sidenav .sidenav_list .list{
+    text-align: left;
+    padding-left: 30px;
+    margin-top: 10px;
+    text-transform: capitalize;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.sidenav a{
+    color:white;
+    text-decoration: none;
+    font-size:15px;
+}
+
+/*MAIN CONTENT*/
+.content{
+    margin-left: 180px;
+    padding:30px 80px 80px 60px;
+}
+.content .contentbox{
+    width:1100px;
+    height:auto;
+    padding-bottom: 10px;
+    box-shadow: -2px 5px 20px 1px #4F4C9B;
+    color: #76748E;
+}
+.content .Top{
+    width: 1100px;
+    height: 100px;
+}
+.content .Top p{
+    float:right; clear:both; position: relative; right: 30px; color: #76748E; font-size: 25px;
+}
+.content .Top h1{
+    color: #76748E;
+}
+
+/*My Account Styles*/
+.content .contentbox .myAccount{
+    padding:25px;
+}
+.content .contentbox .myAccount::after{
+    content: " ";
+    display: block; 
+    clear: both;
+}
+.content .contentbox .myAccount p{
+    font-size: 22px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.content .contentbox .myAccount h3{
+    font-weight: bold;
+}
+.content .contentbox .myAccount .userinfo{
+    float: left;
+    width: 500px;
+}
+.content .contentbox .myAccount .accountInfo{
+    float: left;
+    width: 450px;
+}
+.content .contentbox .myAccount input[type="text"]{
+    width:280px;
+}
+.content .contentbox .myAccount textarea{
+    height:100px;
+}
+.myAccount .accountInfo .buttons{
+    text-align: right;
+    margin:10px;
+}
+.myAccount .accountInfo .btn{
+    padding:10px 30px;
+    margin:15px;
+}
+.myAccount .empID, .myAccount .usertype{
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+
+/*Manage Account Styles*/
+.content .contentbox .manageAccountHead{
+    background: #5955B3;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    left: 12px;
+}
+.content .contentbox .manageAccountHead .col-4{
+    padding-top: 15px;
+    cursor: pointer;
+}
+.content .contentbox .manageAccountHead a{
+    color: white;
+    text-decoration: none;
+}
+     /*Accounnt List*/
+.content .contentbox .accountList a{
+    padding:10px 5px 5px 10px;
+    margin-top: 8px;
+}
+.content .contentbox .accountList i{
+   float: left;  
+   position:relative; 
+   top:-3px;
+   margin-right: 5px;
+}
+.content .contentbox .accountList .edit{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.content .contentbox .accountList .archive{
+    margin-bottom: 8px;
+}
+.myAccount .editaccount{
+    text-align: right;
+}
+
+    /*Add Account*/
+.content .contentbox .addAccount{
+    padding:25px;
+    display: none;
+}
+.content .contentbox .addAccount::after{
+    content: " ";
+    display: block; 
+    clear: both;
+}
+.actives{
+    background:#C6C4FE;
+    height: 100%;
+}
+.content .contentbox .addAccount .userinfo{
+    float: left;
+    width: 500px;
+}
+.content .contentbox .addAccount .accountInfo{
+    float: left;
+    width: 450px;
+}
+.content .contentbox .addAccount p{
+    font-size: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.content .contentbox .addAccount .add{
+    padding:10px 30px 10px 30px;
+    font-size:20px;
+    position:relative;
+    float:right;
+    right:130px;
+    top:20px;
+}
+.content .contentbox .addAccount input[type="text"]{
+    width:280px;
+}
+.content .contentbox .addAccount textarea{
+    height: 100px;
+}
+    /*Archived List*/
+.content .contentbox .archivedList{display: none;}
+
+/*TABLE*/
+.accountList table td:nth-child(11) {width: 100px;}
+.accountList table {table-layout: fixed; width: 100%; word-wrap: break-word; text-align: center;}
+.archivedList table {table-layout: fixed; width: 100%; word-wrap: break-word; text-align: center;}
+/*table tr:nth-child(1){background: white;}
+table tr:nth-child(2n+2) { background: #57549F; color:white;}
+table tr:nth-child(2n+3) { background: #aba9e2; }*/
+
+
+
+
+/*manage-inventory*/
+
+
+/*Product List*/
+.productList table{
+    text-align:center;
+}
+.productList i{
+    position: relative;
+    top: -3px;
+    margin-right: 5px;
+}
+.productList .reorder{
+    color:red;
+    font-size: 30px;
+}
+.productList .edit{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.productList .btn{
+    margin:5px;
+    display: inline-flex;
+}
+
+/*Add Product*/
+.addProduct{
+    display: none;
+    padding:20px;
+    font-size:20px;
+}
+.addProduct td{
+    padding:10px;
+}
+.addProduct input[type="text"]{
+    width: 250px;
+}
+.addProduct p{
+    font-size:20px;
+    padding-top:15px;
+}
+.addProduct .buttons{
+    text-align:right;
+    position:relative;
+    right:100px;
+}
+/*Archived Product*/
+.archivedProduct{
+    display:none;
+}
+.archivedProduct .table{
+    text-align:center;
+}
+
+
+/*Edit Product*/
+.editProduct{
+    padding:20px;
+    font-size:20px;
+}
+.editProduct td{
+    padding:10px;
+}
+.editProduct input[type="text"]{
+    width: 250px;
+}
+.editProduct p{
+    font-size:20px;
+    padding-top:15px;
+}
+.editProduct .buttons{
+    text-align:right;
+    position:relative;
+    right:100px;
+}
+
+/*OrderList*/
+.content .contentbox .manageOrderHead{
+    background: #5955B3;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font-size: 27px;
+    position: relative;
+    left: 12px;
+}
+.content .contentbox .manageOrderHead .col-3{
+    padding-top: 15px;
+    cursor: pointer;
+}
+.content .contentbox .manageOrderHead a{
+    color: white;
+    text-decoration: none;
+}
+.content .contentbox .manageorderlist i{
+    position: relative;
+    top: -2px;
+    margin-right: 5px;
+}
+.content .contentbox .manageorderlist .viewbtn{
+   position: relative;
+   top:25px;
+   float: right;
+}
+.content .contentbox .manageorderlist .btn{
+    margin:5px;
+}
+
+
+/*Received Order List*/
+.content .contentbox .orderlist table{
+    text-align: center;
+}
+.content .contentbox .orderlist .btn-view{
+    background:#7A7A39; color:white;
+}
+.content .contentbox .orderlist .btn-process{
+    background:#39787A; color:white;
+}
+.content .contentbox .orderlist .btn-cancel{
+    background:#BC4E4E; color:white;
+}
+
+/*Shipment*/
+.content .contentbox .shipment{
+    display: none;
+}
+.content .contentbox .shipment table{
+    text-align: center;
+}
+.content .contentbox .shipment .btn-view{
+    background:#7A7A39; color:white;
+    padding-left: 17px; padding-right: 17px;
+}
+.content .contentbox .shipment .btn-deliver{
+    background:#4A7A39; color:white;
+}
+
+
+/*Processed*/
+.content .contentbox .deliver{
+    display: none;
+}
+.content .contentbox .deliver table{
+    text-align: center;
+}
+.content .contentbox .deliver .btn-view{
+    background:#7A7A39; color:white;
+    display: inline-flex;
+}
+
+
+
+/*Cancelled*/
+.content .contentbox .cancel{
+    display: none;
+}
+.content .contentbox .cancel table{
+    text-align: center;
+}
+.content .contentbox .cancel .btn-view{
+    background:#7A7A39; color:white;
+    display: inline-flex;
+}
+
+/*Manage Supply*/
+.content .contentbox .managesupplyhead{
+    background: #5955B3;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font-size: 27px;
+    position: relative;
+    left: 12px;
+}
+.content .contentbox .managesupplyhead .col-6{
+    padding-top: 15px;
+    cursor: pointer;
+    color: white;
+}
+.ware-list i{
+    position: relative;
+    top: -3px;
+}
+.ware-list .table{
+    text-align: center;
+}
+.ware-list .reorder{
+    color:red; font-size:30px;
+}
+.manage-supply .req-list{
+    display: none;
+}
+
+/*Reports Styles*/
+.content .contentbox .reportHead{
+    background: #5955B3;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font-size: 27px;
+    position: relative;
+    left: 12px;
+}
+.content .contentbox .reportHead .col-3{
+    padding-top: 20px;
+    cursor: pointer;
+    color: white;
+    font-size:22px;
+}
+.content .contentbox .warehouseList table{
+    text-align: center;
+}
+.content .contentbox .warehouseList .reorder{
+    color:red;
+    font-size: 30px;
+}
+.content .contentbox .recordLevel{
+    display: none;
+}
+.content .contentbox .recordLevel .viewbtn{
+    position: relative;
+    top:25px;
+    float: right;
+ }
+ .content .contentbox .recordLevel .reorder{
+    color:red;
+    font-size: 30px;
+}
+.content .contentbox .recordLevel table{
+    text-align: center;
+}
+.content .contentbox .recordLevel .btn-view{
+    background:#7A7A39; color:white;
+}
+.content .contentbox .totalShipped{
+    display: none;
+}
+.content .contentbox .totalShipped .totalbox{
+    border:solid gray 1px;
+    width:80%;
+    cursor: pointer;
+    padding:20px;
+    height: 120px;
+    border-radius: 20px;
+    margin:15px auto;
+    color:#393838;
+}
+.totalShipped .btn-view{
+    background:#7A7A39; color:white;
+}
+.content .contentbox .totalShipped .viewbtn{
+    position: relative;
+    top:40px;
+    float: right;
+ }
+.totalShipped #daily{
+    background:#B0E885;
+}
+.totalShipped #weekly{
+    background: #6E94AA;
+}
+.totalShipped #monthly{
+    background: #E8DB85;
+}
+.totalShipped #annual{
+    background:#C397E9;
+}
+.content .contentbox .totalReturn{
+    display: none;
+}
+.content .contentbox .totalReturn .viewbtn{
+    position: relative;
+    top:40px;
+    float: right;
+ }
+.content .contentbox .totalReturn .totalbox{
+    border:solid gray 1px;
+    width:80%;
+    padding:20px;
+    cursor: pointer;
+    height: 120px;
+    border-radius: 20px;
+    margin:20px auto;
+    color:#393838;
+}
+.content .contentbox .totalReturn .btn-view{
+    background:#7A7A39; color:white;
+}
+.totalReturn #returned{
+    background:#E2B98B;
+}
+
+
+
+
+/*Manage Return Styles*/
+.content .contentbox .managereturnhead{
+    background: #5955B3;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font-size: 27px;
+    position: relative;
+    left: 12px;
+}
+.content .contentbox .managereturnhead .col-6{
+    padding-top: 15px;
+    cursor: pointer;
+    color: white;
+}
+
+/*return*/
+.content .contentbox .return .btn-view{
+    background:#7A7A39; color:white;
+}
+

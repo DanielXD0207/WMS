@@ -1,0 +1,10 @@
+@media (max-width:500px){
+    .sidenav{
+        width:100%;
+        height: auto;
+        position:relative;
+    }
+    .sidenav .sidenav_list .list img{
+        margin-left: 140px;
+    }
+}
